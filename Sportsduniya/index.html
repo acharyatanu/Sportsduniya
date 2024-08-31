@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Table</title>
+    <style>
+
+        #search {
+            display: block;
+            margin: 20px auto; 
+            width: 50%;
+            padding: 10px; 
+            border-radius: 25px; 
+            border: 1px solid #ddd; 
+            font-size: 16px; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            cursor: pointer;
+            background-color: #818ff7;
+        }
+        tr:hover {background-color: #9c47eb;}
+        .featured {
+            color: rgb(170, 18, 26);
+            font-weight: bold;
+        }
+
+        button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #9bc7f7;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="search" placeholder="Search by College Name">
+    <table id="collegeTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th onclick="sortTable(1)">College Name</th>
+                <th onclick="sortTable(2)">Collegedunia Rating</th>
+                <th onclick="sortTable(3)">Fees</th>
+                <th onclick="sortTable(4)">User Review Rating</th>
+                <th onclick="sortTable(5)">Placement</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+           
+        </tbody>
+    </table>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
